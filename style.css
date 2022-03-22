@@ -10,3 +10,40 @@
   justify-content: center;
   align-items: center;
 }
+
+#head {
+  animation: head-tilt 3s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+#line1 {
+  animation: 2s line1 2s infinite alternate;
+}
+
+#line2 {
+  animation: 2s line1 3s infinite alternate;
+}
+
+#line3 {
+  animation: 2s line1 5s infinite alternate;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+/* @keyframes head-tilt {
+  0% {
+    transform: rotateY(0deg) translateX(-0.5rem);
+  }
+  100% {
+    transform: rotateY(-180deg);
+  }
+} */
+
+@keyframes line1 {
+  0% {
+    fill: #6c63ff;
+  }
+
+  100% {
+    fill: #e6e6e6;
+  }
+}
